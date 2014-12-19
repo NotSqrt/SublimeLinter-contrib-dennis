@@ -1,7 +1,7 @@
 SublimeLinter-contrib-dennis
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-dennis.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-dennis)
+[![Build Status](https://travis-ci.org/NotSqrt/SublimeLinter-contrib-dennis.svg?branch=master)](https://travis-ci.org/NotSqrt/SublimeLinter-contrib-dennis)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [dennis](https://github.com/willkg/dennis). It will be used with files that have the “Gettext” syntax, which is included.
 
