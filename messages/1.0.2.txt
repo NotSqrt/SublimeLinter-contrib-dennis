@@ -1,0 +1,9 @@
+SublimeLinter-contrib-dennis 1.0.2
+==================================
+
+The required version of dennis is now 0.7.0
+
+New available settings:
+
+- rules
+- excluderules

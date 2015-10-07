@@ -21,8 +21,8 @@ class Dennis(Linter):
     cmd = 'dennis-cmd lint --reporter line'
     executable = None
     version_args = 'lint'  # no --version flag, so trick it by not providing the file path
-    version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.6.0'
+    version_re = r'(?P<version>\d+\.\d+(\.\d+)?)'
+    version_requirement = '>= 0.7.0'
     regex = r'^.*:(?P<line>\d+):(\d+):(?P<code>(?:(?P<error>[E])|(?P<warning>[W]))\d+):(?P<message>.+)$'
     multiline = False
     line_col_base = (1, 1)
@@ -32,6 +32,8 @@ class Dennis(Linter):
     word_re = None
     defaults = {
         '--errorsonly:': False,
+        '--rules:,': [],
+        '--excluderules:,': [],
     }
     inline_settings = None
     inline_overrides = None

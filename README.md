@@ -19,7 +19,7 @@ Before using this plugin, you must ensure that `dennis` is installed on your sys
    ```
 
 
-**Note:** This plugin requires `dennis` 0.6.0 or later.
+**Note:** This plugin requires `dennis` 0.7.0 or later.
 
 ### Linter configuration
 In order for `dennis` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
@@ -40,9 +40,11 @@ For general information on how SublimeLinter works with settings, please see [Se
 
 In addition to the standard SublimeLinter settings, SublimeLinter-contrib-dennis provides its own settings.
 
-|Setting|Description|
-|:------|:----------|
-|errorsonly| Boolean that indicates whether you want dennis to be limited to errors |
+|Setting|Description|Inline Setting|Inline Override|
+|:------|:----------|:------------:|:-------------:|
+|errorsonly| Boolean that indicates whether you want dennis to be limited to errors | | |
+|rules| A comma-delimited list of checks to enable | |&#10003;|
+|excluderules| A comma-delimited list of checks to disable | |&#10003;|
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
